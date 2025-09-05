@@ -1,0 +1,261 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid #77aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Hero Section */
+#about.hero {
+    background: #333 url('https://via.placeholder.com/1500x400') no-repeat center center/cover; /* Placeholder for a background image */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#about.hero h2 {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+#about.hero p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Skills Section */
+#skills .skill-category {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#skills .skill-category h3 {
+    color: #77aaff;
+    margin-top: 0;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+}
+
+#skills .skill-category ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills .skill-category li {
+    background: #eee;
+    color: #555;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+}
+
+#project-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+}
+
+.project-card {
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for carousel items */
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: left;
+    scroll-snap-align: start;
+}
+
+.project-card h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.project-card a {
+    color: #77aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+#prev-project, #next-project {
+    background-color: #77aaff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+#prev-project:hover, #next-project:hover {
+    background-color: #5588cc;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#contact ul li a {
+    color: #77aaff;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    #about.hero {
+        padding: 60px 0;
+    }
+
+    #about.hero p {
+        font-size: 1em;
+    }
+
+    .project-card {
+        width: 100%; /* Full width for cards on small screens */
+        margin: 10px 0;
+    }
+
+    #project-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+}
