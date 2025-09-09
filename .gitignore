@@ -1,1 +1,49 @@
-resume.md, Gist_CV.md
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Web related
+lib/
+test/
+analysis_options.yaml
+pubspec.yaml
+pubspec.lock
+README.md
+.gitignore
+
+# IDE related
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS related
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Keep only the build output for GitHub Pages
+!assets/
+!canvaskit/
+!favicon.png
+!flutter.js
+!flutter_bootstrap.js
+!flutter_service_worker.js
+!icons/
+!main.dart.js
+!manifest.json
+!index.html
+!threejs_background.html
+!version.json
